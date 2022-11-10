@@ -1,0 +1,152 @@
+{
+    "ignorePatterns": [
+        "**/*.scss.d.ts",
+        "build/**/*"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 2020,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true,
+            "modules": true
+        }
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        },
+        "import/resolver": {
+            "node": {
+                "extensions": [
+                    ".js",
+                    ".jsx",
+                    ".ts",
+                    ".tsx"
+                ],
+                "paths": [
+                    "src"
+                ]
+            }
+        }
+    },
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true
+    },
+    "extends": [
+        "airbnb",
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:react-hooks/recommended",
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "rules": {
+        "eol-last": [
+            2,
+            "always"
+        ],
+        "jsx-a11y/label-has-associated-control": [
+            2,
+            {
+                "labelComponents": [
+                    "InputLabelSC"
+                ],
+                "labelAttributes": [
+                    "label"
+                ],
+                "controlComponents": [
+                    "InputSC"
+                ],
+                "depth": 3
+            }
+        ],
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                "js": "never",
+                "jsx": "never",
+                "ts": "never",
+                "tsx": "never",
+                "json": "never"
+            }
+        ],
+        "react/jsx-filename-extension": [
+            1,
+            {
+                "extensions": [
+                    ".js",
+                    ".jsx",
+                    ".ts",
+                    ".tsx"
+                ]
+            }
+        ],
+        "react/destructuring-assignment": [
+            0
+        ],
+        "no-use-before-define": "off",
+        "no-duplicate-imports": 0,
+        "import/no-duplicates": 0,
+        "react/button-has-type": 0,
+        "react/jsx-props-no-spreading": 0,
+        "no-tabs": 0,
+        "react/jsx-indent": [
+            2,
+            4,
+            {
+                "indentLogicalExpressions": true
+            }
+        ],
+        "indent": [
+            "warn",
+            4
+        ],
+        "quotes": [
+            2,
+            "single"
+        ],
+        "react/jsx-indent-props": [
+            "error",
+            4
+        ],
+        "curly": 0,
+        "nonblock-statement-body-position": 0,
+        "semi": 0,
+        "max-len": [
+            "warn",
+            {
+                "code": 100,
+                "ignoreComments": true,
+                "ignoreRegExpLiterals": true,
+                "ignoreStrings": true
+            }
+        ],
+        "object-curly-newline": 0,
+        "operator-linebreak": 0,
+        "arrow-body-style": 0,
+        "brace-style": [
+            "error",
+            "stroustrup"
+        ],
+        "no-empty": 0,
+        "@typescript-eslint/explicit-module-boundary-types": 0,
+        "@typescript-eslint/no-empty-function": 0,
+        "import/no-extraneous-dependencies": 0,
+        "import/prefer-default-export":0,
+        "no-spaced-func": 0,
+        "no-confusing-arrow": 0,
+        "comma-dangle": ["error", {
+            "arrays": "always-multiline",
+            "objects": "always-multiline",
+            "imports": "never",
+            "exports": "always-multiline",
+            "functions": "always-multiline"
+        }]
+    }
+}
